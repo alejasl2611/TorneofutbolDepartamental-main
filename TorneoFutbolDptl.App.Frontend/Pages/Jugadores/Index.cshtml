@@ -1,0 +1,37 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.Jugadores.IndexModel
+@{
+}
+
+<h1> Lista de Jugadores</h1>
+<br>
+<a class="btn btn-primary" asp-page="./Create">Crear Jugador</a>
+<p></p>
+<table class="table table-striped">
+    <thead>
+        <tr>
+            <th scope="col">Nombre</th>
+            <th scope="col">Número</th>
+            <th scope="col">Equipo</th>
+            <th scope="col">Posición</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var jugador in Model.jugadores)
+        {
+            <tr>
+                <td>@jugador.Nombre</td>
+                <td>@jugador.Numero</td>
+                <td>@jugador.Equipo</td>
+                <td>@jugador.Posicion</td>
+                <td>
+                    <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@jugador.Id">Detalles</a>
+                    <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@jugador.Id">Editar</a>
+                    <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@jugador.Id">Eliminar</a>
+
+
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

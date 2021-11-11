@@ -1,0 +1,44 @@
+﻿@page
+@using TorneoFutbolDptl.App.Dominio
+@model TorneoFutbolDptl.App.Frontend.Pages.Partidos.CreateModel
+@{
+}
+<h1>Agregar Partido</h1>
+<form method="post">
+
+    <div class="form-group">
+        <label asp-for="partido.EquipoLocal"></label>
+        <input asp-for="partido.EquipoLocal" class="form-control">
+        <span asp-validation-for="partido.EquipoLocal" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.EquipoVisita"></label>
+        <input asp-for="partido.EquipoVisita" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.EquipoLocalMarca"></label>
+        <input asp-for="partido.EquipoLocalMarca" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.EquipoVisitaMarca"></label>
+        <input asp-for="partido.EquipoVisitaMarca" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.FechaHora"></label>
+        <input asp-for="partido.FechaHora" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.Arbitro"></label>
+        <input asp-for="partido.Arbitro" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.Estadio"></label>
+        <input asp-for="partido.Estadio" class="form-control">
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.Novedad"></label>
+        <input asp-for="partido.Novedad" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Guardar</button>
+</form>
+<a class="btn btn-secondary" asp-page="./Index">Cancelar</a>

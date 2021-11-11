@@ -1,0 +1,46 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.Partidos.DetailsModel
+@{
+}
+<h1>Detalles del Partido</h1>
+<table class="table table-striped">
+    <tr>
+        <th scope="col">Id</th>
+        <td>@Model.partido.Id</td>
+    </tr>
+    <tr>
+        <th scope="col">Equipo local</th>
+        <td>@Model.partido.EquipoLocal</td>
+    </tr>
+    <tr>
+        <th scope="col">Equipo visitante</th>
+        <td>@Model.partido.EquipoVisita</td>
+    </tr>
+    <tr>
+        <th scope="col">Goles equipo local</th>
+        <td>@Model.partido.EquipoLocalMarca</td>
+    </tr>
+    <tr>
+        <th scope="col">Goles equipo visitante</th>
+        <td>@Model.partido.EquipoVisitaMarca</td>
+    </tr> 
+    <tr>
+        <th scope="col">Fecha/Hora</th>
+        <td>@Model.partido.FechaHora</td>
+    </tr> 
+    <tr>
+        <th scope="col">Árbitro</th>
+        <td>@Model.partido.Arbitro</td>
+    </tr>
+    <tr>
+        <th scope="col">Estadio</th>
+        <td>@Model.partido.Estadio</td>
+    </tr>
+     <tr>
+        <th scope="col">Novedades</th>
+        <td>@Model.partido.Novedad</td>
+    </tr>                          
+    </table>
+    <a class="btn btn-primary" asp-page="./Edit" asp-route-id="@Model.partido.Id">Editar</a>
+</table>
+<a class="btn btn-secondary" asp-page="./Index">Volver</a>

@@ -1,0 +1,21 @@
+﻿@page
+@using TorneoFutbolDptl.App.Dominio
+@model TorneoFutbolDptl.App.Frontend.Pages.Partidos.DeleteModel
+@{
+}
+<h1>Eliminar Partidor</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="partido.Id"></label>
+        <input asp-for="partido.Id" class="form-control" readonly>
+    </div>
+    <div class="form-group">
+        <label asp-for="partido.FechaHora"></label>
+        <input asp-for="partido.FechaHora" class="form-control" readonly>
+        <span asp-validation-for="partido.FechaHora" class="text-danger"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Eliminar</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Cancelar</a>

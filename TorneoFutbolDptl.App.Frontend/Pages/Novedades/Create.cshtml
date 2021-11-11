@@ -1,0 +1,22 @@
+﻿@page
+@using TorneoFutbolDptl.App.Dominio
+@model TorneoFutbolDptl.App.Frontend.Pages.Novedades.CreateModel
+@{
+}
+<h1>Creación de una Novedad</h1>
+<form method="post">
+    <div class="form-group">
+        <label asp-for="novedad.TarjetaAmarilla"></label>
+        <input asp-for="novedad.TarjetaAmarilla" class="form-control"placeholder="1">
+        <span asp-validation-for="novedad.TarjetaAmarilla" class="text-danger"></span>
+    </div>
+    
+    <div class="form-group">
+        <label asp-for="novedad.FechaHoraTA"></label>
+        <input asp-for="novedad.FechaHoraTA" class="form-control" placeholder="2021-10-23 14:25:00.0000000">
+    </div>
+
+    <button type="submit" class="btn btn-primary">Crear</button>
+</form>
+<br>
+<a class="btn btn-secondary" asp-page="./Index">Cancelar</a>

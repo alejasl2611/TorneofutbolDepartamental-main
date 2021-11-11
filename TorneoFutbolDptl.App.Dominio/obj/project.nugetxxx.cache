@@ -1,0 +1,15 @@
+{
+  "version": 2,
+  "dgSpecHash": "fpo0B1DhjQTk+/KyLuz3uZmhaYkFbC3qGXr/Zb6MuifmiNuO8e0PW5eXYfVvk755/g0wcF1HP3B4PmoFbAIGFQ==",
+  "success": true,
+  "projectFilePath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+  "expectedPackageFiles": [],
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problema al leer el archivo de caché C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
+}

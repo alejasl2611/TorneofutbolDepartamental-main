@@ -1,0 +1,33 @@
+﻿@page
+@model TorneoFutbolDptl.App.Frontend.Pages.Novedades.IndexModel
+@{
+}
+<h1>Lista de Novedades</h1>
+<a class="btn btn-primary" asp-page="./Create">Crear Novedad</a>
+<p></p>
+<table class="table">
+    <thead>
+        <tr>
+            <th scope="col">Gol equipo local</th>
+            <th scope="col">Fecha/Hora</th>
+            <th scope="col">Gol equipo visitante</th>
+            <th scope="col">Fecha/Hora</th>
+        </tr>
+    </thead>
+    </tbody>
+    @foreach (var novedad in Model.novedades)
+    {
+        <tr>
+            <td>@novedad.GolEquipoLocal</td>
+            <td>@novedad.FechaGEl</td>
+            <td>@novedad.GolEquipoVisita</td>
+            <td>@novedad.FechaGEV</td>
+            <td>
+                <a class="btn btn-secondary" asp-page="./Details" asp-route-id="@novedad.Id">Detalles</a>
+                <a class="btn btn-secondary" asp-page="./Edit" asp-route-id="@novedad.Id">Editar</a>
+                <a class="btn btn-secondary" asp-page="./Delete" asp-route-id="@novedad.Id">Eliminar</a>
+            </td>
+        </tr>
+    }
+    </tbody>
+</table>

@@ -1,0 +1,10 @@
+{
+  "version": 2,
+  "dgSpecHash": "LuONyTyn2OoHzfd5E203UlEbjexPGJIFajstrP5ZNBtVN15gJu9SAvem5/YcC3hQAx/i6nYgx0eXnFQJv6yP1A==",
+  "success": true,
+  "projectFilePath": "C:\\Torneos\\TorneofutbolDepartamental\\TorneoFutbolDptl.app.Dominio\\TorneoFutbolDptl.App.Dominio.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\maham\\.nuget\\packages\\system.componentmodel.annotations\\5.0.0\\system.componentmodel.annotations.5.0.0.nupkg.sha512"
+  ],
+  "logs": []
+}
